@@ -47,74 +47,6 @@ Foram implementados dois cenários principais:
 
 ---
 
-## 🚀 Como compilar no Windows
-
-1. Instale o **MinGW** no Windows.  
-   - Durante a instalação, selecione o compilador `g++`.  
-   - Adicione o diretório `bin` do MinGW na variável de ambiente **PATH**.  
-
-2. Abra o **Prompt de Comando** na pasta do projeto.  
-
-3. Compile cada programa com o seguinte comando:  
-
-### Exemplo – Compilar Servidor TCP
-```bash
-g++ servidor_tcp.cpp -o servidor_tcp.exe -lws2_32
-
-▶️ Como executar
-Cenário 1
-
-Inicie a máquina virtual do servidor.
-
-Execute o servidor TCP:
-
-Sempre exibir os detalhes
-servidor_tcp.exe
-
-
-Ou execute o servidor UDP:
-
-Sempre exibir os detalhes
-servidor_udp.exe
-
-
-Nas duas máquinas virtuais de clientes, execute:
-
-Cliente TCP:
-
-Sempre exibir os detalhes
-cliente_tcp.exe
-
-
-Cliente UDP:
-
-Sempre exibir os detalhes
-cliente_udp.exe
-
-
-O servidor atenderá os dois clientes simultaneamente.
-
-Cenário 2
-
-Inicie a máquina virtual do servidor.
-
-Execute o servidor TCP ou UDP normalmente.
-
-Na máquina virtual de cliente, execute múltiplos clientes multithreaded:
-
-Cliente TCP Multithread:
-
-Sempre exibir os detalhes
-cliente_tcp_multithread.exe
-
-
-Cliente UDP Multithread:
-
-Sempre exibir os detalhes
-cliente_udp_multithread.exe
-
-
-O cliente disparará múltiplas requisições em paralelo, e o servidor deve conseguir atendê-las simultaneamente.
 
 🖥️ Ambiente de Virtualização
 
@@ -126,7 +58,7 @@ Cenário 2: 1 VM servidor + 1 VM cliente.
 
 As máquinas foram clonadas para facilitar a configuração do ambiente.
 
-O sistema operacional pode ser Windows ou Linux (mas este projeto está configurado para Windows).
+O sistema operacional pode ser Windows ou Linux (mas este projeto está configurado para Linux).
 
 📚 Aprendizados
 
